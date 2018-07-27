@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonblueInvisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="11dp"
+        android:background="#AED2FF"
+
+        android:text="The Invisible Man's To Do List" />
+
+    <Button
+        android:id="@+id/buttonpinkPanther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/buttonblueInvisible"
+        android:background="#FD9BF3"
+
+        android:text="The Pink Panther's To Do List" />
+</android.widget.RelativeLayout>
