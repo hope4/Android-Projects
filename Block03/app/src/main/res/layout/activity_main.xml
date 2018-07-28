@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".MainActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="30"
+        android:weightSum="10"
+        android:background="@android:color/holo_blue_bright">
+
+        <Button
+            android:id="@+id/buttonsmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="small" />
+
+        <Button
+            android:id="@+id/buttonBig"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="Big" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="70"
+        android:background="@drawable/compass">
+
+        <Button
+            android:id="@+id/buttonNorth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="#979797"
+            android:text="North" />
+
+        <Button
+            android:id="@+id/buttonsouth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:background="#979797"
+            android:text="South" />
+
+        <Button
+            android:id="@+id/buttonEast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="#979797"
+            android:text="East" />
+
+        <Button
+            android:id="@+id/buttonWest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:background="#979797"
+            android:text="West" />
+
+        <Button
+            android:id="@+id/buttonCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="#979797"
+            android:text="center" />
+
+        <Button
+            android:id="@+id/buttonNE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonNorth"
+            android:layout_above="@id/buttonEast"
+            android:layout_toRightOf="@id/buttonNorth"
+            android:layout_toLeftOf="@id/buttonEast"
+            android:background="#979797"
+            android:text="NE" />
+
+
+
+
+
+        <Button
+            android:id="@+id/buttonSE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonEast"
+            android:layout_above="@id/buttonsouth"
+            android:layout_toRightOf="@id/buttonsouth"
+            android:layout_toLeftOf="@id/buttonEast"
+            android:background="#979797"
+            android:text="SE" />
+
+
+        <Button
+            android:id="@+id/buttonSW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonWest"
+            android:layout_above="@id/buttonsouth"
+            android:layout_toRightOf="@id/buttonWest"
+            android:layout_toLeftOf="@id/buttonsouth"
+            android:background="#979797"
+            android:text="SW" />
+
+        <Button
+            android:id="@+id/buttonNW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/buttonWest"
+            android:layout_below="@id/buttonNorth"
+            android:layout_marginRight="-4dp"
+            android:layout_toLeftOf="@id/buttonNorth"
+            android:layout_toRightOf="@id/buttonWest"
+            android:background="#979797"
+            android:text="NW" />
+
+    </RelativeLayout>
+
+</android.widget.LinearLayout>
