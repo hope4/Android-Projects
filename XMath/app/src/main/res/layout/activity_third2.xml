@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    tools:context=".ThirdActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Question:"
+        android:background="@android:color/holo_blue_bright"
+        android:textColor="#000000"
+        android:id="@+id/textviewquestion"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/editTextanswer"
+        android:inputType="none"
+        android:editable="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:background="@android:color/holo_green_dark"
+        android:layout_below="@+id/textviewquestion"
+        android:textColor="#000000"
+        />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="157dp"
+        android:columnCount="3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/n1"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/n2"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/n3"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/n4"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/n5"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/n6"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/n7"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/n8"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/n9"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/ndot"
+            android:text="." />
+
+        <Button
+            android:id="@+id/n0"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/n1clr1"
+            android:text="clr1" />
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textViewtimerdisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginTop="164dp"
+        android:text="00:10"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewtimerdisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:text="Score = 0"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewtimerdisplay"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="77dp"
+        android:onClick="Enter"
+        android:text="Enter" />
+
+    <Button
+        android:id="@+id/buttonend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignTop="@+id/buttonenter"
+        android:text="END" />
+
+</android.widget.RelativeLayout>

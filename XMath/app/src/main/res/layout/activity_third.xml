@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".SecondActivity">
+
+
+    <TextView
+        android:id="@+id/textViewInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Instructions: "
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        />
+
+    <TextView
+        android:id="@+id/textViewInstructionset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Select your level and start answering questions within the given time limit. Points are awarded as per your fastness in answering. 5 points will be deducted everytime you answer wrong. A popup message will be displayed everytime you answer a question correctly. You can skip the question and end the game when ever you feel like. Game will be over if
+either you choose to end or if your points become zero. At the end you will receive result card displaying performance. Show your X_Math skills."
+        android:textColor="#ffffff"
+        />
+
+    <Button
+        android:id="@+id/buttonok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="5dp"
+        android:onClick="ok"
+        android:text="OK" />
+
+</android.widget.LinearLayout>
