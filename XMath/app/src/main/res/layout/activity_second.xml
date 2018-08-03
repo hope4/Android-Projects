@@ -29,8 +29,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:text="Click on play button and start answering questions. Points are awarded for correct answer and will be displayed on the screen. There will be a timer running behind the game. Next question comes as soon as timer goes to zero. 5 points will be deducted everytime you answer wrongly. Game will be over if
-either you choose to end or if your points become zero. Show your X_Math skills."
+        android:text="Click on play button and start answering questions. 10 points are awarded for correct answer and will be displayed on the screen. There will be a timer running on the X_Math. Next question comes as soon as timer goes to zero. 5 points will be deducted everytime for wrong answer or no answer. Game will be over if
+either you choose to end or if your points become zero or if you reach end of X_Math. Show your X_Math skills."
         android:textColor="#ffffff"
         />
 

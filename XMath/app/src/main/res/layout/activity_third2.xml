@@ -4,18 +4,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:background="#000000"
     android:layout_height="match_parent"
     android:weightSum="100"
     tools:context=".ThirdActivity">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:text="Question:"
-        android:background="@android:color/holo_blue_bright"
-        android:textColor="#000000"
+        android:background="#000000"
+        android:textColor="#ffffff"
         android:id="@+id/textviewquestion"/>
 
 
@@ -26,7 +26,7 @@
         android:inputType="none"
         android:editable="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:background="@android:color/holo_green_dark"
+        android:background="#ffffff"
         android:layout_below="@+id/textviewquestion"
         android:textColor="#000000"
         />
@@ -99,8 +99,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginEnd="31dp"
         android:layout_marginTop="164dp"
+        android:layout_below="@id/editTextanswer"
         android:text="00:10"
-        android:textColor="#000000"
+        android:textColor="#ffffff"
         android:textSize="30sp"
         android:textStyle="bold"/>
 
@@ -111,8 +112,9 @@
         android:layout_alignBaseline="@+id/textViewtimerdisplay"
         android:layout_alignParentStart="true"
         android:layout_marginStart="13dp"
+        android:layout_below="@id/editTextanswer"
         android:text="Score = 0"
-        android:textColor="#000000"
+        android:textColor="#ffffff"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -120,8 +122,8 @@
         android:id="@+id/buttonenter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textViewtimerdisplay"
         android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewtimerdisplay"
         android:layout_marginBottom="77dp"
         android:onClick="Enter"
         android:text="Enter" />
@@ -130,9 +132,8 @@
         android:id="@+id/buttonend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_alignStart="@+id/textViewscore"
         android:layout_alignTop="@+id/buttonenter"
-        android:layout_marginStart="41dp"
         android:text="END" />
 
 </android.widget.RelativeLayout>
