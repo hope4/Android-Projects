@@ -32,7 +32,7 @@
         android:id="@+id/buttonplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="140dp"
+        android:layout_marginLeft="135dp"
         android:layout_marginTop="20dp"
         android:onClick="play"
 
@@ -43,7 +43,7 @@
         android:id="@+id/buttoninstructions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="120dp"
+        android:layout_marginLeft="115dp"
         android:layout_marginTop="20dp"
         android:text="Instructions"
         android:textSize="15dp" />

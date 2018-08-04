@@ -86,7 +86,7 @@
 
         <Button
             android:id="@+id/n1clr1"
-            android:text="clr1" />
+            android:text="clr" />
 
 
     </GridLayout>

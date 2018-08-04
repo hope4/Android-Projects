@@ -2,6 +2,7 @@ package com.example.naveen.xmath;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -56,6 +57,7 @@ public class ThirdActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third2);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         textViewquestion = (TextView) findViewById(R.id.textviewquestion);
         editText = (EditText) findViewById(R.id.editTextanswer);
@@ -183,7 +185,7 @@ public class ThirdActivity extends AppCompatActivity {
                             timeleftInMillis = COUNTDOWN_IN_MILLIS;
                             startcountDown();
 
-                            Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
 
                         } else if (editText.getText().toString().matches("")) {
                             Toast.makeText(getApplicationContext(), "Enter answer first", Toast.LENGTH_SHORT).show();
@@ -192,7 +194,7 @@ public class ThirdActivity extends AppCompatActivity {
                             updateScore(score);
                             editText.setText("");
                             if(score <= 0){
-                                Toast.makeText(getApplicationContext(),"You are here",Toast.LENGTH_SHORT).show();
+                                //Toast.makeText(getApplicationContext(),"You are here",Toast.LENGTH_SHORT).show();
                                 textViewquestion.setText("You lost, X_Math Over!! :( \n Try again!!\nYour score is: "+score);
 
                                 textViewscore.setText("");
@@ -233,7 +235,7 @@ public class ThirdActivity extends AppCompatActivity {
                             editText.setText("");
                             textViewquestion.setText("");
 
-                            Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+                           // Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
 
                         } else if (editText.getText().toString().matches("")) {
                             Toast.makeText(getApplicationContext(), "Enter answer first", Toast.LENGTH_SHORT).show();
@@ -268,8 +270,24 @@ public class ThirdActivity extends AppCompatActivity {
                         }
                         Toast.makeText(getApplicationContext(), "End of questions", Toast.LENGTH_SHORT).show();
                         textViewquestion.setText("Congratulations!! :)\nYou have finished X_Math with\nScore: "+score);
+                        editText.setFocusable(false);
                         textViewscore.setText("");
-                        editText.setEnabled(false);
+                        buttonenter.setEnabled(false);
+                        b0.setEnabled(false);
+                        b1.setEnabled(false);
+                        b2.setEnabled(false);
+                        b3.setEnabled(false);
+                        b4.setEnabled(false);
+                        b5.setEnabled(false);
+                        b6.setEnabled(false);
+                        b7.setEnabled(false);
+                        b8.setEnabled(false);
+                        b9.setEnabled(false);
+                        bdot.setEnabled(false);
+                        bclr.setEnabled(false);
+                        timeleftInMillis=0;
+                        updateCountDownText();
+                        countDownTimer.cancel();
 
                     }
 
@@ -329,6 +347,8 @@ public class ThirdActivity extends AppCompatActivity {
                 b9.setEnabled(false);
                 bdot.setEnabled(false);
                 bclr.setEnabled(false);
+                timeleftInMillis=0;
+                updateCountDownText();
                 countDownTimer.cancel();
             }
             }
